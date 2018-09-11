@@ -1,0 +1,26 @@
+ 
+<label>Nome: </label>
+<input type="text" [(ngModel)]="lista.name"><p>
+<label>Valor: </label>
+<input type="text" [(ngModel)]="lista.value"><p>
+<label>Data: </label>
+<input type="text" [(ngModel)]="lista.date_launch"><p>
+<button type="button" (click)="add()">Adicionar</button>
+  
+  <ul>
+    <li *ngFor="let item of listaAdd">     
+     {{item.name + '-' +item.value}}
+     {{item.date_launch}}
+    </li>
+  </ul>
+
+  <table border="2">
+    <th>
+        <tr *ngFor="let item of listaAdd">
+            {{item.name + '-' +item.value}}
+            {{item.date_launch}}
+        </tr>
+    </th>
+    
+  </table>
+  
