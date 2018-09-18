@@ -1,0 +1,46 @@
+body{
+    
+}
+
+#div-corpo{
+    background-color: darkgray;
+    width: auto;
+    height: auto;
+}
+#div-barra-superior{
+    background-color: brown;
+    position: fixed;  
+    width: 100%;  
+    height: 40px;
+    text-align: center;    
+}
+#div-barra-superior-2{
+    padding-top: 10px;
+}
+#div-redes{
+    padding-top: 7px;
+
+}
+#img-linguagens{
+    width: 20px;
+}
+.hw{
+    width: 100%;
+    height: 580px;
+    float: left;
+   /*  background-image:url("../img/linguagens.jpg"); */
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: 24em;
+    position: center;    
+}
+.top_intro .titles a span {
+    font-style: normal;
+}  
+.full-image {
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    top: 0;
