@@ -22,5 +22,11 @@ export class ListaTarefasComponent implements OnInit {
     this.listaAdd.push(lista); 
     
   }
+  del(){
+    let lista = Object.assign({}, this.lista)
+    this.listaAdd.forEach(this.lista.name, function () {
+      
+    });
+  }
  
 }
