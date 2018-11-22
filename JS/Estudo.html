@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+
+	<script>
+		var titulo = "Hello Word";
+		
+		document.write("<h3>"+titulo+"</h3>")
+
+	
+
+		var nota = prompt("Nota");
+
+		if (nota >= 7) {
+			document.write("Aluno Aprovado!");
+		} else if ((nota < 7) && (nota > 2)) {
+			document.write("Aluno em Recuperação!");
+		} else {
+			document.write("Aluno Reprovado!");
+		}
+
+		var nomes = [];
+		var i;
+		for(i=0;i<4; i++){
+			nomes.push(prompt("Digite um nome!"));
+		}
+		document.write("</br>" +nomes);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

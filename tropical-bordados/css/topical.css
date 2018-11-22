@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    background-color: #808080;
+    padding: 0px;
+}
+#barra-topo{
+    background-color:unset;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding:  10px;     
+}
+#navegacao{
+    color: white;
+}
+#barra-meio{
+    padding: 60px;
+    object-position: center;
+    text-align: center;
+}
+.row{
+    
+}
+.col{
+
+}
+#img-1{
+    background-image: url("../img/img-1.jpg");
+    width: 100%;    
+}
+.img-2{
+    
+    width: 100%;
+   
+}
+#img-2{
+    width: 100%;
+    
+}
+#texto-capa{
+    text-align: center;
+    margin-top: 20%;
+    
+    
+}
+#bordados-1{
+    padding: 10px;
+    
+}
+#vitrine{
+    width: 300px;    
+}
+#teste{
+    background-image: "img/img-1.jpg";
+}

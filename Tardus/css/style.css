@@ -1,0 +1,111 @@
+		body{
+			background-color: #E8EAEB;
+		}
+		@font-face {
+		    font-family: 'roboto';
+		    src: url(../font/Roboto-Bold.ttf);
+		    font-weight: bold;
+		}
+		.barra_topo{
+			height: 101.02px;
+			background-color: white;
+
+		}
+		.container{
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		.col{
+			padding: 3px;
+
+		}
+		.col-1{
+
+		}
+		.col-2{
+			background-color: white;
+		}
+		.testeTardus{
+			font-size: 22px;
+			font-family: 'roboto';
+			padding: 18px;
+			padding-left: 0px;
+			margin-left: -80px;
+			color: #026FC2;
+		}
+		.nome_user{
+			font-size: 18px;
+			font-family: 'roboto';
+			color: #748998;
+		}
+		.obs{
+			font-size: 14px;
+			color: #748998;
+		}
+		.imgUser{
+			width: 80px;
+			
+		}
+		.imgLogin{
+			width: 19px;
+		}
+		.horas{
+			background-color: #026FC2;
+			color: white;
+			width: 153px;
+			height: 40px;
+			border-radius: 5px;
+			padding: 6px;
+			padding-left: 12px;
+		}
+		.relogio{
+			width: 20px;
+
+		}
+		.selectTopo{
+			width: 275.95px;
+			height: 40px;
+			color: #9DAFBD;
+			border-radius: 5px;
+		}
+		.a{
+			background-color: gray;
+		}
+
+		.corpo{
+
+		}
+		.bemVindo{
+			
+			background-color: white;
+			width: 1160px;
+			height: 500px;
+			font-family: 'roboto';
+			position: relative;
+			margin: 0;
+		    
+		}
+		.quadrado{
+			width: 49.19px;
+			height: 49.19px;
+			background-color: gray;
+			border-radius: 5px;		
+		}
+		#classes{
+			padding: 20px;
+		}
+		.nomes{
+			padding: 13px;
+			font-size: 15px;
+
+		}
+		p{
+			color: #9DAFBD;
+			margin: 0;
+		    font-size: 52px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-right: -50%;
+		    transform: translate(-50%, -50%)
+		    }
