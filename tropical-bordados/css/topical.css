@@ -1,3 +1,5 @@
+
+
 body{
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -15,12 +17,19 @@ body{
 #navegacao{
     color: white;
 }
-#barra-meio{
+.barra-meio{
     padding: 60px;
+    font-size: 40px;
     object-position: center;
     text-align: center;
+    font-family: 'Acme', sans-serif;
+    
 }
-
+#flores-1{
+    width: 50%;
+    position: center;
+    padding: 30px;   
+}
 #img-1{
     background-image: url("../img/img-1.jpg");
     width: 100%;    
@@ -47,9 +56,17 @@ body{
     
 }
 #teste{
-    font-size: 80px;
+    font-size: 700%;
     display: inline;
     margin-top: 15%;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px #ccc;
+    font-family: 'Lobster', cursive;
+}
+#teste-2{
+    font-size: 700%px;
+    display: inline;
+    margin-top: 0%;
     color: #2c3e50;
     text-shadow: 2px 2px 4px #ccc;
     font-family: 'Lobster', cursive;
@@ -60,13 +77,21 @@ body{
     
 }
 #vitrine{
-    width: 300px;    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 .footer{
     width: 100%;
     height: 50px;
     background-color: #8B008B;    
     text-align: center;
-    color: white;
-        
+    color: white;        
+}
+.descricao{
+    padding-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#mapa{
+
 }
