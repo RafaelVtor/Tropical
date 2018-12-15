@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/topical.css" />
+    <link rel="stylesheet" href="css/animacao.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,65 +17,111 @@
     <!--jQuery-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="js/jquery.js">
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--jQuery-->
 
-    <script src="main.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
     <script src="js/wow.min.js"></script>
+    <script src="js/animacao.js"></script>
     <link rel="stylesheet" href="css/animate.css">
+
 
     <script type="text/javascript">
         // Inicializa as animações do wow.min.js no site
         new WOW().init();
     </script>
 
+    <script>
+
+        $(document).ready(function () {
+
+            $('.barra-meio').show("slow", function () {
+                $('.barra-meio').css('opacity', 1);
+
+            });
+
+        })
+
+        /*
+        window.addEventListener("scroll", function () {
+            $("#img-2").show("blind", 2000);
+
+
+        }); */
+    </script>
+
 </head>
 
-<body style="background-color:#F0FFFF" class="container">
+<body style="background-color:#F0FFFF" class="">
+
+
 
     <!-- ------------------------------Barra de Navegação --------------------------------->
     <header id="img-1" class="card bg-ligth">
         <div id="barra-topo" class="cotainer">
             <div class="row" id="navegacao">
-                <div class="col-4">
-                    <center> Tropical Bordados </center>                   
-                </div>
+                
+                <div class="navbar">
 
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Criações</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ensino superior</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Animais</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Infantil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Diversos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Criações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ensino superior</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Animais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Infantil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diversos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 cntainer">
+                    <ul class="row">
+                        <li class="nav navbar-nav navbar-right icones">
+                            <a href="https://www.facebook.com/tropicalbordadosba">
+                                <img src="img/icon/whatsapp-logo.png" alt="">                               
+                            </a>
+                        </li>
+                        <li class="nav navbar-nav navbar-right icones">
+                            <a href="">
+                            <img src="img/icon/facebook-logo.png" alt="">
+                        </a>
+                        </li>
+                        <li>
+                            <a href="nav navbar-nav navbar-right icones">
+                            <img src="img/icon/instagram.png" alt="">
+                        </a>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
         </div>
 
         <div id="texto-capa" class="card-img-overlay">
 
             <h1 id="teste" class="w3-animate-left">Tropical Bordados</h1>
-        
+
 
         </div>
         <div class="w3-display-bottommiddle  w3-padding-32 ">
             <h3 id="teste-2">Bordados diversos para todos os gostos</h3>
-               
-          </div>
+
+        </div>
 
 
 
@@ -87,7 +134,7 @@
 
     <!-------------------------Barra do meio---------------------------->
 
-    <div class="barra-meio">
+    <div class="barra-meio"">
         Temos diversos bordados, encontre o que você está procurando!
     </div>
 
@@ -97,22 +144,23 @@
     <!----------------------------Corpo--------------------------------->
 
     <center>
-        <div class="container">
-            <div class="row">
-                <div class="col" id="bordados-1">
-                    <img id="vitrine" class="w3-opacity w3-hover-opacity-off" alt="" src="img/gato.jpg">
-                    <p class="descricao">teste</p>
-                </div>
-                <div class="col" id="bordados-1">
-                    <img id="vitrine" class="w3-opacity w3-hover-opacity-off" src="img/gato.jpg" alt="">
-                    <p class="descricao">teste</p>
-                </div>
-                <div class="col" id="bordados-1">
-                    <img id="vitrine" class="w3-opacity w3-hover-opacity-off" src="img/gato.jpg">
-                    <p class="descricao">teste</p>
-                </div>
+        <div class="
+        container">
+        <div class="row">
+            <div class="col" id="bordados-1">
+                <img id="vitrine" class="w3-opacity w3-hover-opacity-off" alt="" src="img/gato.jpg">
+                <p class="descricao">teste</p>
+            </div>
+            <div class="col" id="bordados-1">
+                <img id="vitrine" class="w3-opacity w3-hover-opacity-off" src="img/gato.jpg" alt="">
+                <p class="descricao">teste</p>
+            </div>
+            <div class="col" id="bordados-1">
+                <img id="vitrine" class="w3-opacity w3-hover-opacity-off" src="img/gato.jpg">
+                <p class="descricao">teste</p>
             </div>
         </div>
+    </div>
     </center>
 
     <!----------------------------Corpo--------------------------------->
@@ -123,31 +171,31 @@
     <!-------------------------Galeria---------------------------------------->
     <div class="w3-container">
         <p class="barra-meio">Estes são alguns dos nossos trabalhos:</p>
-      </div>
-      
-        <div class="w3-row-padding">
-          <div class="w3-col s4">
+    </div>
+
+    <div class="w3-row-padding">
+        <div class="w3-col s4" style="padding:20px">
             <img src="img/img-3.jpg" style="width:100%">
-          </div>
-          <div class="w3-col s4">
-            <img src="img/img-4.jpg" style="width:100%">
-          </div>
-          <div class="w3-col s4">
-            <img src="img/img-5.jpg" style="width:100%">
-          </div>
         </div>
-        <br>
-        <div class="w3-row-padding">
-            <div class="w3-col s4">
-              <img src="img/img-6.jpg" style="width:100%">
-            </div>
-            <div class="w3-col s4">
-              <img src="img/img-7.jpg" style="width:100%">
-            </div>
-            <div class="w3-col s4">
-              <img src="img/img-8.jpg" style="width:100%">
-            </div>
-          </div>
+        <div class="w3-col s4" style="padding:20px">
+            <img src="img/img-4.jpg" style="width:100%">
+        </div>
+        <div class="w3-col s4" style="padding:20px">
+            <img src="img/img-5.jpg" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div class="w3-row-padding" style="padding:20px">
+        <div class="w3-col s4" style="padding:20px">
+            <img src="img/img-6.jpg" style="width:100%">
+        </div>
+        <div class="w3-col s4" style="padding:20px">
+            <img src="img/img-7.jpg" style="width:100%">
+        </div>
+        <div class="w3-col s4" style="padding:20px">
+            <img src="img/img-8.jpg" style="width:100%">
+        </div>
+    </div>
     <!-------------------------Galeria---------------------------------------->
     <!---------------------------Localização---------------------------->
     <div id="" class="barra-meio">
@@ -162,21 +210,21 @@
     <div class="footer">
         -Site feito por Rafael Alves dos Santos.-
 
-        
-    <div class="footer">
 
-    </div>
-    <!-----------------------------Footer-------------------------------->
+        <div class="footer">
 
-    
+        </div>
+        <!-----------------------------Footer-------------------------------->
 
-    <!----------------------------SCRIPTS---------------------------------->
 
-    <script>
-        $("#bordados-1").show("blind")
-    </script>
 
-    <!----------------------------SCRIPTS---------------------------------->
+        <!----------------------------SCRIPTS---------------------------------->
+
+
+
+        <!----------------------------SCRIPTS---------------------------------->
+
+
 </body>
 
 </html>

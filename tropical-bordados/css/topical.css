@@ -17,12 +17,16 @@ body{
 #navegacao{
     color: white;
 }
+.icones{
+    padding-right: 20px;
+}
 .barra-meio{
     padding: 60px;
     font-size: 40px;
     object-position: center;
     text-align: center;
     font-family: 'Acme', sans-serif;
+   
     
 }
 #flores-1{
@@ -77,8 +81,8 @@ body{
     
 }
 #vitrine{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
 }
 .footer{
