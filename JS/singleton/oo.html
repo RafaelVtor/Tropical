@@ -1,0 +1,25 @@
+<div id="resultado"></div>
+
+<script src="classe_singleton.js"></script>
+
+
+
+<script>
+  console.log(Singleton);
+  console.log("======Sem Instancia Iniciada!====");
+  console.log(Singleton.instancia);
+  Singleton.iniciar();
+  console.log("======Com Instancia Iniciada!====");
+  console.log(Singleton.instancia);
+  console.log("===Alterando o atributo nome===");
+  Singleton.instancia.nome = "Rafael"
+  console.log(Singleton.instancia.nome);
+  console.log("==== Dando alerta do método unitário da minha classe singleton!");
+    
+  Singleton.instancia.MostrarNaTela();
+  
+</script>
+
+
+
+<h1>Exemplo de Singleton!</h1>

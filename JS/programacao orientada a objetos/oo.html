@@ -1,0 +1,38 @@
+<div id="resultado"></div>
+
+<script src="cliente.js"></script>
+
+
+<script>
+    /*
+    var c = new Cliente();
+    c.nome = prompt("NOME: ");
+    c.cpf = prompt('CPF: ');
+    c.telefone = prompt('TEL: ');
+    c.GravarEmMemoria();
+    */
+    var c = new Cliente({nome:"Rafael Vítor"});
+    c.GravarEmMemoria();
+    // c.Mostrar();
+
+    //document.write('<hr>');
+    /*
+    var c2 = new Cliente();
+    c2.nome = prompt("NOME: ");
+    c2.cpf = prompt('CPF: ');
+    c2.telefone = prompt('TEL: ');
+    c2.GravarEmMemoria();
+    */
+    var c2 = new Cliente({telefone: "6666"});
+    c2.GravarEmMemoria();
+
+    var c3 = new Cliente({nome:"Patricia", telefone:"6666", cpf:"616"});
+    c3.GravarEmMemoria();
+    //c2.Mostrar();
+
+    Cliente.todos();
+</script>
+
+
+
+<h1>Orientação a objeto</h1>

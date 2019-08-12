@@ -1,0 +1,33 @@
+<div id="resultado"></div>
+
+<script src="abstracao.js"></script>
+<script src="cliente.js"></script>
+<script src="fornecedor.js"></script>
+<script src="pessoa.js"></script>
+
+
+
+<script>
+  
+    var rafael = new Pessoa();
+    rafael.nome = "Rafael";
+    rafael.cpf = "123";
+    rafael.telefone = "54321";
+    rafael.GravarEmMemoria();
+
+    console.log(Pessoa.Base);
+
+    var f = new Fornnecedor();
+    f.nome = "Rafael";
+    f.cpf = "123";
+    f.telefone = "54321";
+    f.GravarEmMemoria();
+
+    console.log(Fornnecedor.Base);
+
+    Cliente.todos();
+</script>
+
+
+
+<h1>Orientação a objeto</h1>

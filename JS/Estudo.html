@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Teste</title>
-
-	<script>
-		var titulo = "Hello Word";
-		
-		document.write("<h3>"+titulo+"</h3>")
-
+<script>
 	
 
-		var nota = prompt("Nota");
+	aluno = ''
+	nota1 = 0
+	nota2 = 0
+	nota3 = 0
+	media = 0
+	situacao = ''
 
-		if (nota >= 7) {
-			document.write("Aluno Aprovado!");
-		} else if ((nota < 7) && (nota > 2)) {
-			document.write("Aluno em Recuperação!");
-		} else {
-			document.write("Aluno Reprovado!");
-		}
+	aluno = prompt("digite o nome do aluno:")
+	nota1 = parseInt( prompt('digite a nota nº1'))
+	nota2 = parseInt( prompt('digite a nota nº2') )
+	nota3 = parseInt(prompt('digite a nota nº3'))
+	
+	media = (nota1+nota2+nota3)/3
 
-		var nomes = [];
-		var i;
-		for(i=0;i<4; i++){
-			nomes.push(prompt("Digite um nome!"));
-		}
-		document.write("</br>" +nomes);
+	if (media>=7) {
+		document.write('Aluno '+ aluno +' aprovado! <br>Media:'+ media +'')		
+	};
+	if (media<=5) {
+		document.write('Aluno '+ aluno +' em recuperação! <br>Media:'+ media +'')
+	}else if(media<2) {
+		document.write('Aluno '+ aluno +' reprovado! <br>Media:'+ media +'')
+	}
 
-	</script>
-</head>
-<body>
-
-</body>
-</html>
+	document.write(texto)
+</script>

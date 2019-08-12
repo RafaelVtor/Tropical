@@ -1,0 +1,140 @@
+<script>
+    /*
+        
+        aluno = [
+            nome = '',
+            idade = 0,
+        ]
+    
+        aluno.nome = prompt('Nome: ')
+        aluno.idade = prompt('Idade: ')
+        
+        document.write('======Alunos===== <br>')
+        document.write('Nome: ' + aluno.nome + '  -  Idade: ' +aluno.idade + '<br>')
+    */
+    nomes = []
+    notas1 = []
+    notas2 = []
+    result = []
+
+
+    for (let index = 0; index < 3; index++) {
+        nome = prompt('digite um nome: ')
+        nota1 = parseInt(prompt('digite nota 1: '))
+        nota2 = parseInt(prompt('digite nota 2: '))
+
+        nomes.push(nome)
+        notas1.push(nota1)
+        notas2.push(nota2)
+    }
+    document.write('===================== Alunos ===================== <br><br>')
+    document.write("Nome ============== Nota 1 ============== Nota 2 ============== Media == Resultado <br>")
+
+    mediaClass = 0
+    qtnAlunos = nomes.length
+    totalPontos = 0
+
+    for (let i = 0; i < 3; i++) {
+
+        media = (notas1[i] + notas2[i]) / 2
+        if (media >= 7) {
+            result[i] = 'Aprovado'
+        } else if (media <= 7 && media >= 3) {
+            result[i] = 'Recuperação'
+        } else {
+            result[i] = 'Reprovado'
+        }
+
+        totalPontos = (totalPontos + media)
+
+        document.write(nomes[i] + '==============  ' + notas1[i] + '  ==============  ' + notas2[i] + '  ==============  ' + media + '==' + result[i] + '<br>')
+
+    }
+    mediaClass = totalPontos / qtnAlunos
+    document.write('Media da sala: ' + mediaClass + "<br>")
+
+    qtnAlunos_aprovados = 0
+    qtnAlunos_reprovados = 0
+    qtnAlunos_recuperacao = 0
+
+    for (let index = 0; index < nomes.length; index++) {
+        if (result[index] == 'Aprovado') {
+            qtnAlunos_aprovados = qtnAlunos_aprovados + 1
+        } else if (result[index] == 'Recuperação') {
+            qtnAlunos_recuperacao = qtnAlunos_recuperacao + 1
+        } else if (result[index] == 'Reprovado') {
+            qtnAlunos_reprovados = qtnAlunos_reprovados + 1
+        }
+    }
+
+    document.write('Quantidade de alunos aprovados: ' + qtnAlunos_aprovados + '<br>')
+    document.write('Quantidade de alunos reprovados: ' + qtnAlunos_reprovados + '<br>')
+    document.write('Quantidade de alunos na recuperação: ' + qtnAlunos_recuperacao + '<br><br>')
+
+    // ++++++++++ Mesma coisa só que com HASH ++++++++++++++++++
+
+    alunos = []
+
+    for (let index = 0; index < 3; index++) {
+        nome = prompt('digite um nome: ')
+        nota1 = parseInt(prompt('digite nota 1: '))
+        nota2 = parseInt(prompt('digite nota 2: '))
+
+        aluno = {
+            nome: nome,
+            nota1: nota1,
+            nota2: nota2,
+            media: 0,
+            situacao: ''
+        }
+        alunos.push(aluno)
+    }
+
+    document.write('===================== Alunos ===================== <br><br>')
+    document.write("Nome ============== Nota 1 ============== Nota 2 ============== Media == Resultado <br>")
+
+    mediaClass = 0
+    qtnAlunos = alunos.length
+    totalPontos = 0
+
+    for (let i = 0; i < 3; i++) {
+
+        alunos[i].media = (alunos[i].nota1 + alunos[i].nota2) / 2
+        if (alunos[i].media >= 7) {
+            alunos[i].situacao = 'Aprovado'
+        } else if (alunos[i].media <= 7 && alunos[i].media >= 3) {
+            alunos[i].situacao = 'Recuperação'
+        } else {
+            alunos[i].situacao = 'Reprovado'
+        }
+
+        totalPontos = (totalPontos + alunos[i].media)
+
+        document.write(alunos[i].nome + '==============  ' + alunos[i].nota1 + '  ==============  ' + alunos[i].nota2 + '  ==============  ' + alunos[i].media + '==' + alunos[i].situacao + '<br>')
+
+    }
+    mediaClass = totalPontos / qtnAlunos
+    document.write('Media da sala: ' + mediaClass + "<br>")
+
+    qtnAlunos_aprovados = 0
+    qtnAlunos_reprovados = 0
+    qtnAlunos_recuperacao = 0
+
+    for (let i = 0; i < nomes.length; i++) {
+        if (alunos[i].situacao  == 'Aprovado') {
+            qtnAlunos_aprovados = qtnAlunos_aprovados + 1
+        } else if (alunos[i].situacao  == 'Recuperação') {
+            qtnAlunos_recuperacao = qtnAlunos_recuperacao + 1
+        } else if (alunos[i].situacao  == 'Reprovado') {
+            qtnAlunos_reprovados = qtnAlunos_reprovados + 1
+        }
+    }
+
+    document.write('Quantidade de alunos aprovados: ' + qtnAlunos_aprovados + '<br>')
+    document.write('Quantidade de alunos reprovados: ' + qtnAlunos_reprovados + '<br>')
+    document.write('Quantidade de alunos na recuperação: ' + qtnAlunos_recuperacao + '<br>')
+
+
+
+
+</script>
