@@ -7,7 +7,7 @@
 
 
 <?php 
-	include("conexao.php");
+	
 
 
 /*  ----------------------------tratando a imagem salva--------------------------*/

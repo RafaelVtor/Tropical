@@ -6,18 +6,44 @@
 
 	if ((isset($_POST['usuario'])) && (isset($_POST['senha']))) {
 		$usuario = mysqli_real_escape_string($mysqli, $_POST['usuario']);
-		$senha = mysqli_real_escape_string($mysqli, $_POST['senha']);
-		//$senha = md5($senha);/* está dando erro na hora de verificar, sem ele funciona, mas tem que olhar depois o que tá acontecendo*/
+		$senha = md5(mysqli_real_escape_string($mysqli, $_POST['senha']));
+		
 
 		$sql = "SELECT * FROM usuario WHERE nome = '$usuario' AND senha = '$senha' LIMIT 1";
 		$result = mysqli_query($mysqli, $sql);
 		$resultado = mysqli_fetch_assoc($result);
 
+
+		
+		$con = $mysqli->query($sql) or die($mysqli->error);
+		$dado = $con->fetch_array();
+		$id = $dado["id"];
+		$_SESSION['id']		=	$dado["id"];
+		$_SESSION['nome']	=	$dado["nome"];
+		$_SESSION['email']	=	$dado['email'];
+		$_SESSION['tel']	=	$dado['tel'];
+		$_SESSION['endereco']	=	$dado['endereco'];
+		$_SESSION['senha']	=	$senha;
+
 		if (empty($resultado)) {
-			$_SESSION['loginErro'] = "Usuário ou senha invalida";
-			header("Location: login.php");
+			?>
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<title></title>
+			</head>
+			<body>
+				<script type="text/javascript">
+					alert("Usuário ou senha invalida!");
+					location.href="index.php";
+				</script>			
+			</body>
+			</html>
+
+			<?php
+			
 		}elseif (isset($resultado)) {
-			header("Location: principal.php");
+			header("Location: perfil_principal.php?user=$id");
 		}
 	}
 

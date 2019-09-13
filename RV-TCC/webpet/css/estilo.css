@@ -86,9 +86,7 @@
 
 .div_imagem_perfil{
 
-  float: left;
-  position: relative;  
-  width: 20%;
+  width: 200px;
   height: auto;
   background-color: red;
   margin-top: 15px;
@@ -105,6 +103,7 @@
 }
 .div_menu_lateral{
   margin-top: 10px;
+
 }
 #div_tabela{
   position: relative;
@@ -112,6 +111,7 @@
   float: right;
   margin-right: 15%;
   margin-top: 100px;
+
 }
 body{
   margin: 0;
@@ -152,4 +152,17 @@ header label{
   padding: 20px;
   width: 80%;
 }
+
+
+<!-- Menu -->
+
+<!-- Perfil Pet -->
+
+#perfil_pet{
+  background-color: red;
+  padding: 30px;
+  border-style: solid;
+}
+
+
 

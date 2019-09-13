@@ -1207,6 +1207,7 @@ pre {
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
+    background-color: blue;
     display: block;
     width: 100%;
     overflow-x: auto;
@@ -3052,6 +3053,11 @@ tbody.collapse.show {
   border-radius: calc(0.25rem - 1px); }
 
 .card-img-top {
+
+  /* trecho feito por mim*/
+  object-fit: contain;
+  /* trecho feito por mim*/
+
   width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); }
