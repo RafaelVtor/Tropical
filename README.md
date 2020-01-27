@@ -1,2 +1,1 @@
-# Tropical
-Estudos
+# Estudos
